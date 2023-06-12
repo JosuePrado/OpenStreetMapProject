@@ -2,8 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet-routing-machine';
 
-
-function App() {
+export function App() {
   const mapRef = useRef<HTMLDivElement>(null);
   const [map, setMap] = useState<L.Map | null>(null);
   const [waypoints, setWaypoints] = useState<L.LatLng[]>([
@@ -92,5 +91,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
